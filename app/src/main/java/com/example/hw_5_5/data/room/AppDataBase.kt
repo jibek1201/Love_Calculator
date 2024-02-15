@@ -1,5 +1,6 @@
 package com.example.hw_5_5.data.room
 
+import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.example.hw_5_5.remote.LoveModel
 

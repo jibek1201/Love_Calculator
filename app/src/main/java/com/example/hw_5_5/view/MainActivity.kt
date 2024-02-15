@@ -12,6 +12,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
     @Inject
     lateinit var pref: Pref
     private lateinit var binding: ActivityMain2Binding
@@ -28,6 +29,12 @@ class MainActivity : AppCompatActivity() {
 
         if (!pref.isShow()) {
             navController?.navigate(R.id.onBoardingFragment)
+
+            with(animationView){
+                setMainAndMaxFrame(30,50)
+
+            }
+
         }
     }
 }
